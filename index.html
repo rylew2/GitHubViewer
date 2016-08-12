@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="GitHubViewer">
+
+  <head>
+    <script data-require="angular.js@1.2.24" data-semver="1.5.7" src="https://code.angularjs.org/1.5.7/angular.js"></script>
+    <script data-require="angular-route@1.4.2" data-semver="1.4.2" src="https://code.angularjs.org/1.4.2/angular-route.js"></script>
+    <script src="app.js"></script> <!-- has to come before the other scripts since it is defining the module-->
+    <script src="MainController.js"></script>
+  <script src="UserController.js"></script>  
+      <script src="RepoController.js"></script>
+    <script src="github.js"></script>
+
+    <!-- github.js after the module is defined in script.js  -->
+  </head>
+    <body>
+      <h1>GitHub Viewer !!</h1>
+      <div ng-view></div>
+    </body>
+
+
+
+</html>

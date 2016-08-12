@@ -1,0 +1,38 @@
+  
+  <a href="#/main.html">Back to Search</a>
+  
+  <div>
+    <!-- string is  -->
+    <div>
+       <p ng-show="user.message">{{user.message}}</p>
+      <h2> GitHub username: {{user.login}}</h2>
+      <img ng-src="{{user.avatar_url}}" title="{{user.name}}" />
+    </div>
+    
+        <b>Order:</b>  
+    <select ng-model="repoSortOrder">
+      <option value="+name">Name asc</option>
+      <option value="-stargazers_count">Stars desc</option>
+      <option value="+language">Language asc</option>
+    </select>
+
+  </div> <!-- end div ng-show -->
+
+   
+    <table border=".5" ng-show="user">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Stars</th>
+          <th>Language</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="repo in repos | orderBy:repoSortOrder ">
+          <td>{{repo.name }}</td>
+          <td>{{repo.stargazers_count | number}}</td>
+          <!-- number filter -->
+          <td>{{repo.language}}</td>
+        </tr>
+      </tbody>
+    </table>
