@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages/Microsoft.Net.Compilers.1.0.0/tools/Microsoft.Build.Tasks.CodeAnalysis.dll
