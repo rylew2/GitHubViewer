@@ -1,4 +1,20 @@
+
+<a href="#/main.html">Back to Search</a> <br/>
+<a href="#/user/{{repo.owner.login}}">Back to users's profile: {{repo.owner.login}}</a>
   
-  <a href="#/main.html">Back to Search</a>
-  
-  
+  <h2>{{repo.name}}</h2>
+
+<div>
+    Issues: {{repo.open_issues_count}}
+</div>
+
+<div>
+    <ul>
+        <li ng-repeat="user in repo.contributors">
+           
+            <img src="http://www.gravatar.com/avatar/{{user.gravatar_id}}"
+                 alt="{{user.login}}" />
+                {{user.login}}
+        </li>
+    </ul>
+</div>

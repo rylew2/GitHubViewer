@@ -1,5 +1,4 @@
 (function() {
-
   //currently a global var
   var UserController = function($scope, github, $routeParams) {
 
@@ -27,4 +26,4 @@
 
   app.controller("UserController", UserController);
  
-})(); 
+})();  
