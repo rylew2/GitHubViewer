@@ -4,9 +4,7 @@
   //Get user and repos for user
   var github = function($http){
     var getUser = function(username){
-      return $http.get("https://api.github.com/users/" + username + 
-                "?client_id=61d75e8cec406e0ad085&client_secr" + 
-                "et=1380711ff6db898be88dfa75e734a660173e1df2")
+      return $http.get("https://api.github.com/users/" + username)
             .then( function(response){
                 return response.data;
              });
