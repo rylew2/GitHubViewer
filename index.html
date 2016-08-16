@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html ng-app="GitHubViewer">
 
-  <head>
-      <link rel="stylesheet" href="styles.css" type="text/css" />
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
     <script data-require="angular.js@1.2.24" data-semver="1.5.7" src="https://code.angularjs.org/1.5.7/angular.js"></script>
     <script data-require="angular-route@1.4.2" data-semver="1.4.2" src="https://code.angularjs.org/1.4.2/angular-route.js"></script>
+    <script src="https://use.fontawesome.com/fea894c569.js"></script>
     <script src="app.js"></script> <!-- has to come before the other scripts since it is defining the module-->
     <script src="MainController.js"></script>
-  <script src="UserController.js"></script>  
-      <script src="RepoController.js"></script>
+    <script src="UserController.js"></script>
+    <script src="RepoController.js"></script>
     <script src="github.js"></script>
 
     <!-- github.js after the module is defined in script.js  -->
-  </head>
-  <body>
+</head>
+<body>
 
 
 
     <header id="header">
         <div class="innertube">
-            <h1>Header...</h1>
+            <img src="https://www.angularjs.org/favicon.ico" style="float:left" />
+            <h1>ngular GitHub Viewer</h1>
+
         </div>
     </header>
 
@@ -28,12 +31,11 @@
         <main>
             <div id="content">
                 <div class="innertube">
-                    <h1>Heading</h1>
 
-                    <h1>GitHub Viewer !!</h1>
                     <div ng-view></div>
                     <p>
-                    <script>generateText(20)</script></p>
+                       <!-- <script>generateText(20)</script>-->
+                    </p>
                 </div>
             </div>
         </main>
@@ -41,29 +43,7 @@
         <nav id="nav">
             <div class="innertube">
                 <h3>Left heading</h3>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                </ul>
-                <h3>Left heading</h3>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                </ul>
-                <h3>Left heading</h3>
-                <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                    <li><a href="#">Link 5</a></li>
-                </ul>
+
             </div>
         </nav>
 
@@ -71,7 +51,10 @@
 
     <footer id="footer">
         <div class="innertube">
-            <p>Footer...</p>
+            <p>Ryan Lewis</p>
+            <a href="https://www.linkedin.com/in/ryan-lewis-378657a"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size:40px"></i></a>
+            <a href="https://github.com/rylew2"><i class="fa fa-github" aria-hidden="true" style="font-size:40px"></i></a>
+
         </div>
     </footer>
 
