@@ -5,19 +5,25 @@
      $routeProvider
           .when("/main", { 
                 templateUrl: "main.html",
-                controller: "MainController"          
+                controller: "MainController",
+                message: 'Viewing main'
           })
            .when("/user/:username", { // : denotes a parameter
                 templateUrl: "user.html",
-                controller: "UserController"
+                controller: "UserController",
+                message: 'Viewing user'
            })
             .when("/repo/:username/:reponame", { // : denotes a parameter
                 templateUrl: "repo.html",
-                controller: "RepoController"
+                controller: "RepoController",
+                message: 'Viewing repo'
             })
           .otherwise({redirectTo: "/main"});
        
     
   });
+
+    
+
 
 })();

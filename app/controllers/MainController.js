@@ -3,7 +3,7 @@
   //currently a global var
   var MainController = function(
         $scope, $interval, $location) {
-
+    
 
       var onError = function (reason) {
          
@@ -16,7 +16,7 @@
         };  
 
       //  $scope.username = "angular";
-        $scope.message = "Enter....";
+     
 
   };
 
