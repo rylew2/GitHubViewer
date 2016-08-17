@@ -1,9 +1,10 @@
 <div>
-    
+    <div ng-show="error">{{error}}</div>
   <form name="searchUser" ng-submit="search(username)">
     <input type="search" required placeholder="Please enter a GitHub username" ng-model="username" />
     <input type="submit"  >
   </form>
+
   <br />
 </div> 
 

@@ -5,7 +5,8 @@
         $scope, $interval, $location) {
 
 
-        var onError = function(reason) {
+      var onError = function (reason) {
+         
           $scope.error = "Could not fetch the data from GitHub";
         };
 
@@ -15,7 +16,7 @@
         };  
 
       //  $scope.username = "angular";
-
+        $scope.message = "Enter....";
 
   };
 
