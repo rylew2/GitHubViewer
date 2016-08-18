@@ -1,5 +1,12 @@
 (function() {
-  var app = angular.module("GitHubViewer", ["ngRoute"]); //[] for dependencies
+    var app = angular.module("GitHubViewer", ["ngRoute"])
+
+    //.controller('LeftNavController', function ($scope) {
+    //    // Controller business operation  
+    //    $scope.message = 'this';
+    //})
+
+    ; //[] for dependencies
 
   app.config(function($routeProvider) {
      $routeProvider
@@ -23,7 +30,8 @@
     
   });
 
-    
+
+
 
 
 })();

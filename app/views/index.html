@@ -7,12 +7,14 @@
     <script data-require="angular-route@1.4.2" data-semver="1.4.2" src="https://code.angularjs.org/1.4.2/angular-route.js"></script>
     <script src="https://use.fontawesome.com/fea894c569.js"></script>
     <script src="/app/app.js"></script> <!-- has to come before the other scripts since it is defining the module-->
+    <script src="/app/controllers/LeftNavController.js"></script>
     <script src="/app/controllers/MainController.js"></script>
     <script src="/app/controllers/UserController.js"></script>
     <script src="/app/controllers/RepoController.js"></script>
     <script src="/app/services/github.js"></script>
-    <script src="app/controllers/LeftNavController.js"></script>
+
     <!-- github.js after the module is defined in script.js  -->
+  
 </head>
 <body>
 
@@ -20,10 +22,10 @@
 
     <header id="header">
         <div class="innertube">
-           
-                <img src="https://www.angularjs.org/favicon.ico" style="float:left" />
-                <h1>ngular GitHub Viewer</h1> <br/>
-                <p>Adapated from <a href="https://www.pluralsight.com/courses/angularjs-get-started">Pluralsight</a></p>
+
+            <img src="https://www.angularjs.org/favicon.ico" style="float:left" />
+            <h1>ngular GitHub Viewer</h1> <br />
+            <p>Adapated from <a href="https://www.pluralsight.com/courses/angularjs-get-started">Pluralsight</a></p>
         </div>
     </header>
 
@@ -34,12 +36,12 @@
                 <div class="innertube">
 
                     <div ng-view></div>
-                    </div>
+                </div>
             </div>
         </main>
 
-        <nav id="nav" >
-            <div class="innertube" ng-controller="LeftNavController">
+        <nav id="nav" ng-controller="LeftNavController">
+            <div class="innertube"><br/>
                 {{message}}
 
             </div>

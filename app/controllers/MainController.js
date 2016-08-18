@@ -2,8 +2,9 @@
 
   //currently a global var
   var MainController = function(
-        $scope, $interval, $location) {
-    
+        $scope, $interval, $location, $routeParams) {
+
+
 
       var onError = function (reason) {
          
@@ -16,7 +17,7 @@
         };  
 
       //  $scope.username = "angular";
-     
+        var x = 2;
 
   };
 
